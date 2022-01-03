@@ -434,7 +434,7 @@ footer .container .links {
 @media (max-width: 767px) {
     footer .container .links {
         flex-direction: column;
-        align-content: center;
+        text-align: center;
         margin-top: 30px;
     }
 }
