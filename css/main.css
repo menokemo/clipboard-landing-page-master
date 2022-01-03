@@ -35,6 +35,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 .container {
     padding-left: 15px;
     padding-right: 15px;
@@ -205,13 +209,11 @@ a {
 }
 
 .header .container .logo img {
-    width: 150px;
     margin: 100px 0;
 }
 
 @media (max-width: 767px) {
     .header .container .logo img {
-        width: 100px;
         margin: 30px auto 20px;
     }
 }
@@ -258,7 +260,6 @@ a {
 
 .keep .container .image img {
     margin-left: -25px;
-    max-width: 100%;
 }
 
 @media (max-width: 992px) {
@@ -303,8 +304,6 @@ a {
 
 .access img {
     position: relative;
-    max-width: 100%;
-    width: 800px;
     left: 50%;
     transform: translatex(-50%);
 }
@@ -338,7 +337,7 @@ a {
 
 .supercharge .container .work-box .content {
     text-align: center;
-    width: 300px;
+    max-width: 300px;
     padding: 10px;
 }
 
@@ -409,26 +408,13 @@ a {
 
 footer {
     background-color: #F4F5F6;
-    height: 200px;
-    padding-top: 20px;
-    position: relative;
-}
-
-@media (max-width: 767px) {
-    footer {
-        height: 400px;
-        padding: 30px auto;
-    }
+    padding: 20px 0;
 }
 
 footer .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 @media (max-width: 767px) {
@@ -438,7 +424,7 @@ footer .container {
 }
 
 footer .container img {
-    width: 60px;
+    max-width: 60px;
 }
 
 footer .container .links {
@@ -456,43 +442,26 @@ footer .container .links {
 footer .container .links .col {
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
+    padding: 40px;
 }
 
 @media (max-width: 767px) {
     footer .container .links .col {
-        align-content: center;
-        margin: 0;
+        padding: 5px;
     }
 }
 
 footer .container .links .col a {
     margin-bottom: 20px;
     color: black;
-    margin-top: 20px;
-}
-
-@media (max-width: 767px) {
-    footer .container .links .col a {
-        margin: 10px;
-        text-align: center;
-    }
 }
 
 footer .container .links .col a:hover {
     color: var(--Strong-Cyan);
 }
 
-@media (max-width: 767px) {
-    footer .container .social {
-        margin: 30px auto;
-    }
-}
-
 footer .container .social {
-    width: 150px;
     display: flex;
-    justify-content: space-evenly;
 }
 
 footer .container .social a:hover img {
@@ -500,7 +469,7 @@ footer .container .social a:hover img {
 }
 
 footer .container .social img {
-    width: 20px;
+    margin: 15px;
 }
 
 
